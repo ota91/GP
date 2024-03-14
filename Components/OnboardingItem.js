@@ -2,9 +2,11 @@ import React from 'react';
 import { View, Text, StyleSheet, Image, useWindowDimensions} from 'react-native';
 
 export default OnboardingItem = ({ item }) => {
+        // Getting the width of the device
     const { width } = useWindowDimensions();
 
     return (
+                // View containing the onboarding item, setting its width dynamically based on device width above
         <View style={[styles.container, { width }]}>
             <Image source={item.image} style={[styles.image, { width, resizeMode: 'contain' }]} />
 
@@ -15,7 +17,7 @@ export default OnboardingItem = ({ item }) => {
         </View>
     );
 };
-
+// Styles for the OnboardingItem component
 const styles = StyleSheet.create({
     container: {
         flex: 1,
