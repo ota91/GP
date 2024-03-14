@@ -11,11 +11,6 @@ The purpose of this is to ensure that everyone understand the codebase.
 2. **AI model & DataSet**: DataSet Collection.
 3. **BackEnd**: Link With FrontEnd.
 
-## Contribution Guidelines
-- Contributions to the project are welcome through pull requests.
-- When contributing, please ensure that comments added are clear, concise, and follow established coding conventions.
-- If making significant changes or adding new features, it is recommended to discuss them beforehand through issues or discussions.
-
 ## Feedback and Suggestions
 if you have any Feedback and suggestions for improving the codebase go ahead.
 
