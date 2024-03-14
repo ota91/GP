@@ -4,7 +4,6 @@ import OnboardingItem from './OnboardingItem';
 import Paginator from './Paginator';
 import slides from '../slides';
 import { useNavigation } from '@react-navigation/native';
- // Ensure you're importing useNavigation
 
 export default function Onboarding() {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -31,6 +30,7 @@ export default function Onboarding() {
 
     return (
         <View style={styles.container}>
+      {/* FlatList to render onboarding screens */}
             <View style={{ flex: 3 }}>
                 <FlatList
                     data={slides}
@@ -49,8 +49,10 @@ export default function Onboarding() {
                     ref={slidesRef}
                 />
             </View>
-
+            {/* Paginator component to indicate current slide */}
             <Paginator data={slides} scrollX={scrollX} />
+
+                         {/* Continue button */}
 
             <Animated.View style={{ width: '100%', opacity: buttonOpacity, position: 'absolute', bottom: 100, alignItems: 'center' }}>
                 <TouchableOpacity
