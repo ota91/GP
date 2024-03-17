@@ -22,6 +22,6 @@ This project is licensed under the [IMSIU](M2 GP2).
 | Name |  Role     | Any General Comments                           
 | ----------------- | --------------- | -------------------------------------------- |
 | Suliman Alkhunaizan|  FrontEnd | Tell others what do you think! |
+| Fahad Almutairi |   BackEnd  | will be using flask framework                       |
 | Ibrahim Otain|     AI model   | Tell others what do you think!   |
 | Abdullah Ghomaidah| FrontEnd   | Tell others what do you think!                        |
-| Fahad Almutaire|   BackEnd  | Tell others what do you think!                        |
