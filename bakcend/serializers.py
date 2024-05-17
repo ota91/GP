@@ -1,7 +1,7 @@
 
 from django.contrib.auth.models import User
 from rest_framework import serializers
-
+from .models import Transaction
 class UserSerializer(serializers.ModelSerializer):
     # Extra field based on the frontend Registration screen
     password2 = serializers.CharField(style={'input_type': 'password'}, write_only=True)
@@ -41,3 +41,8 @@ class UserSerializer(serializers.ModelSerializer):
         user.set_password(password)
         user.save()
         return user
+
+class TransactionSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Transaction
+        fields = ["id","user","category","amount","transaction_date"]
