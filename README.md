@@ -9,7 +9,7 @@ The purpose of this is to ensure that everyone understand the codebase.
 ## Structre
 1. **FrontEnd**: 70% completed (Need to link with BackEnd + Inside the app we stop the work for one week).
 2. **AI model & DataSet**: DataSet Collection.
-3. **BackEnd**: 85% dne 
+3. **BackEnd**: 85% done 
 
 ## Feedback and Suggestions
 if you have any Feedback and suggestions for improving the codebase go ahead.
