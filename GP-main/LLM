@@ -1,0 +1,24 @@
+from openai import Client
+
+# inter your SMS message
+store_name = input("your message  ")
+
+# My key (do not share it)
+client = Client(api_key="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")
+
+#Ask Chatgpt and his response
+messages = [
+    {"role": "user", "content": f"My purchase message is {store_name}. Can you classify it?"},
+    {"role": "assistant", "content": "Sure! I will classify it..."},
+]
+# the model used
+completion = client.chat.completions.create(
+    model="gpt-3.5-turbo-0613",
+    messages=messages,
+    max_tokens=100
+)
+
+# Processing the results
+result = completion.choices[0].message.content.strip()
+print(f"it is:  {result} ")
+
